@@ -77,8 +77,8 @@
   <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico"> -->
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -248,7 +248,7 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">عرفان عسگری</a></span>
+                <a href="https://github.com/erfanasgari21" target="_blank">عرفان عسگری</a></span>
                 <!-- <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
                   <span class="author-block">
@@ -322,7 +322,7 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<section class="hero teaser" style="display: none;">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
@@ -344,11 +344,14 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">چکیده</h2>
+        <h2 class="title is-3">مقدمه</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+          
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            مدل‌های تولید تصویر پیشرفته، خلق محتوای بصری را متحول کرده‌اند، اما قادر به تولید پایدار شخصیت‌ها نیستند. این مدل‌ها ممکن است یک شخصیت را خوب بسازند، اما در تکرار آن در صحنه‌های جدید ویژگی‌های ثابت ارائه نمی‌دهند. همچنین سوگیری داده‌های آموزشی باعث ناتوانی در بازنمایی شخصیت‌های فرهنگی و بومی شده و کاربرد آن‌ها در انیمیشن، کتاب مصور و تولید محتوای فرهنگی محدود است.
+          </p>
+          <p>
+            این پژوهش به بررسی راهکارهای مختلف شناساندن شخصیت‌های ناشناخته به مدل‌های تولید تصویر انتشار نهفته (Latent Diffusion) می‌پردازد و آنها را از نظر کیفیت خروجی، هزینۀ آموزش، بهره برداری و مقیاس پذیری ارزیابی و مقایسه می‌کند.
           </p>
         </div>
       </div>
@@ -359,37 +362,38 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-small" dir="ltr">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3 is-centered has-text-centered">روش های مورد بررسی</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/dreambooth.png" alt="Dreambooth method" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <h2 class="subtitle has-text-centered" dir="rtl">
+          روش تنظیم دقیق کامل (DreamBooth)
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
+        <img src="static/images/lora.png" alt="LoRA method" loading="lazy"/>
+        <h2 class="subtitle has-text-centered" dir="rtl">
+          روش تنظیم دقیق کم‌رتبه (LoRA)
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
+        <img src="static/images/ti.png" alt="Textual Inversion method" loading="lazy"/>
+        <h2 class="subtitle has-text-centered" dir="rtl">
+         روش وارونسازی متنی (Textual Inversion)
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
+      <img src="static/images/ipadapter.png" alt="IP-Adapter method" loading="lazy"/>
+      <h2 class="subtitle has-text-centered" dir="rtl">
+        روش رمزگذاری چهره (IP-Adapter)
       </h2>
     </div>
   </div>
@@ -402,7 +406,7 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="hero is-small is-light" style="display: none;">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
@@ -423,31 +427,82 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<section class="hero is-small" dir="ltr">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3  is-centered has-text-centered">خروجی های روش منتخب (LoRA)</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide1.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+            Wingy: شخصیت مونث کارتونی دوبعدی
+          </h2>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide2.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+            میمون چی‌توز: شخصیت برند
+          </h2>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide3.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+            شهاب حسینی: بازیگر مرد
+          </h2>
+        </div>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide4.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+            داریوش فرضیایی: مجری مرد
+          </h2>
+        </div>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide5.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+            پسر دلفینی: شخصیت مذکر انیمیشنی سه بعدی
+          </h2>
+        </div>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide6.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+              شهاب حسینی: بازیگر مرد
+          </h2>
+        </div>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide7.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+            رستم: شخصیت مفهومی اساطیری
+          </h2>
+        </div>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide8.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+            داریوش فرضیایی: مجری مرد
+          </h2>
+        </div>
+        <div class="item">
+          <!-- TODO: Replace with your research result images -->
+          <img src="static/images/Slide9.JPG" loading="lazy"/>
+          <!-- TODO: Replace with description of this result -->
+          <h2 class="subtitle has-text-centered" dir="rtl">
+            جناب خان: شخصیت عروسکی
+          </h2>
         </div>
       </div>
     </div>
